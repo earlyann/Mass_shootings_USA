@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Geo JSON</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+    <!-- D3 Code -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+      .jumbotron {
+        background-color: #8B0000;
+        color: lightgray;
+        font-family: 'Inter', sans-serif;
+      }
+      body {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+
+</head>
+<body>
+    <div class="jumbotron text-center">
+      <h1> Mass Shootings in the USA</h1>
+      <p> 1982 - 2023</p>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="map" style="width: 100%; height: 500px;"></div>
+        </div>
+        <div class="col-md-4">
+          <p>Gun ownership in the United States is the highest in the world, and constitutionally protected by the Second Amendment to the United States Constitution. This map shows the horrors that mass shootings have inflicted on our country over the last several decades. Estimates suggest mass shootings make up less than 2% of all gun deaths. This is not to make light but rather to highlight the broadness of the problem. Data source: https://www.kaggle.com/datasets/nidzsharma/us-mass-shootings-19822023</p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="map.js"></script>
+</body>
+</html>
